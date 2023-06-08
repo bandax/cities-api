@@ -115,11 +115,11 @@ var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 // Get access to swagger.json: swagger/v1/swagger.json
-if (app.Environment.IsDevelopment())
-{
+//if (app.Environment.IsDevelopment())
+//{
     app.UseSwagger(); // To generate OpenAPI specification
     app.UseSwaggerUI(); // Use specs to generate the default SwaggerUI documentation
-}
+//}
 
 app.UseHttpsRedirection();
 
